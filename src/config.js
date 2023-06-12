@@ -22,19 +22,35 @@ const solanaMetadata = {
 };
 
 // If you have selected Solana then the collection starts from 0 automatically
+
 const layerConfigurations = [
   {
-    growEditionSizeTo: 5,
+    // Creates up to 50 artworks
+    growEditionSizeTo: 80,
     layersOrder: [
       { name: "Background" },
-      { name: "Eyeball" },
-      { name: "Eye color" },
-      { name: "Iris" },
-      { name: "Shine" },
-      { name: "Bottom lid" },
-      { name: "Top lid" },
+      { name: "Outline" },
+      { name: "Costume" },
+      { name: "Ears" },
+      { name: "Eyes" },
+      { name: "Hat" },
+      { name: "Mouth" },
     ],
   },
+
+  {
+    // Creates up to 50 artworks
+    growEditionSizeTo: 100,
+    layersOrder: [
+      { name: "Background" },
+      { name: "Outline" },
+      { name: "Costume" },
+      { name: "Ears" },
+      { name: "Face" },
+
+    ],
+  },
+
 ];
 
 const shuffleLayerConfigurations = false;
